@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<title> Example 1 - Add 2 Numbers </title>
+
+<style>
+body {
+  background-image: url('Mike Wazowski.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<script>
+
+function addNumbers()
+{
+var num1 = parseFloat(document.getElementById('Number1').value);
+var num2 = parseFloat(document.getElementById('Number2').value);
+
+var sum = num1+num2;
+
+document.getElementById('addresult').innerText = 'Sum:' + sum ;
+}
+
+function multiplyNumbers()
+{
+var num1 = parseFloat(document.getElementById('Number1').value);
+var num2 = parseFloat(document.getElementById('Number2').value);
+
+var product = num1*num2;
+
+document.getElementById('multiplyresult').innerText = 'Product:' + product ;
+}
+
+function divideNumbers()
+{
+var num1 = parseFloat(document.getElementById('Number1').value);
+var num2 = parseFloat(document.getElementById('Number2').value);
+
+var quotient = num1/num2;
+
+document.getElementById('divideresult').innerText = 'Qoutient:' + quotient ;
+}
+
+function subtractNumbers()
+{
+var num1 = parseFloat(document.getElementById('Number1').value);
+var num2 = parseFloat(document.getElementById('Number2').value);
+
+var difference = num1-num2;
+
+document.getElementById('subtractresult').innerText = 'Difference:' + difference ;
+}
+
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+<label> <b> Welcome, Enter Numbers Below:</b></label>
+<br>
+<label> Number 1:</label>
+<input type="text" id ="Number1">
+<br>
+
+<label> Number 2:</label>
+<input type="text" id ="Number2">
+<br>
+
+
+<button onclick= "addNumbers()">Add</button>
+<button onclick= "multiplyNumbers()">Multiply</button>
+<button onclick= "divideNumbers()">Divide</button>
+<button onclick= "subtractNumbers()">Subtract</button>
+<br>
+
+<p id="addresult"> </p>
+<p id="multiplyresult"> </p>
+<p id="divideresult"> </p>
+<p id="subtractresult"> </p>
+
+
+
+</body>
+
+
+
+</html>
+</html>
+</html>
+</html>
